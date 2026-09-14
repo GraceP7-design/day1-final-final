@@ -24,5 +24,10 @@ check github repository to confirm
 2. run strreamlit, referring to python file i created
 >streamlit run home.py
 
+##Create Code in your python file
+1. Import streamlit
+>import streamlit as st
+2. Import openai
+3. import python
 
 #control C will stop the server running
