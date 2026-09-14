@@ -8,8 +8,10 @@ click sync changes
 check github repository to confirm
 
 ##setting up envi in terminal
-1. Create 
-2.source
+1. Create venv file
+>python -m venv .venv
+2.Activate virtual environment
+>source .venv/bin/activate
 3. To install libraries / dependencies, first create a requirements.txt file
 4. add openai, streamlit, python-dotenv to requirements text file
 5. install dependencies by refering to requirements.txt file
