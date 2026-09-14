@@ -35,3 +35,18 @@ if st.button("Generate Poem"):
         input=f"Write a short poem about {topic}.",
     )
     st.write(response.output_text)
+
+st.header("Part 3 - Display Welcome based on Persona")
+
+persona = st.selectbox(
+    "What persona should respond?",
+    ("Shark", "Cow", "Clown", "Donald Trump"),
+)
+
+if st.button("Generate Persona Response"):
+    persona_response = client.responses.create(
+        model="gpt-4o",
+        instructions=f"You must respond as if you are a: {persona}",
+        input=f"Greet {name} and make them welcome.",
+    )
+    st.write(persona_response.output_text)
