@@ -8,7 +8,7 @@ click sync changes
 check github repository to confirm
 
 ##setting up envi in terminal
-1. Create venv file
+1. Create virtual environment
 >python -m venv .venv
 2.Activate virtual environment
 >source .venv/bin/activate
@@ -16,6 +16,7 @@ check github repository to confirm
 4. add openai, streamlit, python-dotenv to requirements text file
 5. install dependencies by refering to requirements.txt file
 >pip install -r requirements.txt
+>pip install --upgrade pip
 6. Create a .env file
 7. Ensure .env file is grayed out (git ignored) if not edit .gitignore to include .env
 8. Add secrets to .env
